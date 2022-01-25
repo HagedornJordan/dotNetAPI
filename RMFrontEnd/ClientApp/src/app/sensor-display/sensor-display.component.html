@@ -1,0 +1,14 @@
+<h1 id="sensorReadings">Sensor Data</h1>
+
+<p>This component demonstrates fetching data from the server.</p>
+
+<table>
+  <tr>
+    <th>Date</th>
+    <th>Temperature (F)</th>
+  </tr>
+  <tr *ngFor="let data of dataPoints">
+    <td>{{data.measureDate}}</td>
+    <td>{{data.temp}}</td>
+  </tr>
+</table>
